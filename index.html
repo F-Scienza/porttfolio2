@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="stylesDesktop.css" rel="stylesheet" media="(min-width: 769px)"/>
 </head>
 <body>
     <section class="header">
         <nav>
             <ul class="navigation">
-                <li class="nav-item"><a href="#acerca-de">Acerca de</a></li>
-                <li class="nav-item"><a href="#proyectos">Mis Proyectos</a></li>
-                <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                <li class="nav-item"><a href="#about">Acerca de</a></li>
+                <li class="nav-item"><a href="#projects">Mis Proyectos</a></li>
+                <li class="nav-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </section>
-    <section class="hello">
+    <section id="hello" class="hello">
         <div class="hello__container">
             <span class="hello__container span">
                 <img class="avatar" src="./images/avatar-normal.svg" alt="avatar">
@@ -33,43 +34,47 @@
             </div>
         </div>
     </section>
-    <section class="presentacion">
-        <h2>Desarrollador frontend</h2>
-        <p>
+    <section id="about" class="presentacion">
+        <div class="presentacion-blabla">
+            <h2>Desarrollador frontend</h2>
+            <p>
+                Mi nombre es Facundo Scienza. Soy técnico mecatrónico y desde 
             Mi nombre es Facundo Scienza. Soy técnico mecatrónico y desde 
-            el 2020, en inicios de pandemia, me sentí atraido por el mundo del
-            desarrollo web, mas precisamente en el desarrollo frontend. <br/>
-            Las siguientes son las principales habilidades en las que
-            estuve enfocado.
-        </p>
+                Mi nombre es Facundo Scienza. Soy técnico mecatrónico y desde 
+                el 2020, en inicios de pandemia, me sentí atraido por el mundo del
+                desarrollo web, mas precisamente en el desarrollo frontend. <br/>
+                Las siguientes son las principales habilidades en las que
+                estuve enfocado.
+            </p>
+        </div>
         <div class="presentacion-skills">
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-1" src="./images/html-5.svg" alt="html">
+                <img class="skill-icon html" src="./images/html-5.svg" alt="html">
                 <p>html</p>
             </span>
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-2" src="./images/css3.svg" alt="css">
+                <img class="skill-icon css" src="./images/css3.svg" alt="css">
                 <p>css</p>
             </span>
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-3" src="./images/javascript.svg" alt="javascript">
+                <img class="skill-icon js" src="./images/javascript.svg" alt="javascript">
                 <p>javascript</p>
             </span>
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-1" src="./images/react.svg" alt="react">
+                <img class="skill-icon react" src="./images/react.svg" alt="react">
                 <p>react</p>
             </span>
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-2" src="./images/github_1.svg" alt="github">
+                <img class="skill-icon github" src="./images/github_1.svg" alt="github">
                 <p>github</p>
             </span>
             <span class="presentacion-skills-ic">
-                <img class="skill-icon col-3" src="./images/webpack.svg" alt="webpack">
+                <img class="skill-icon wp" src="./images/webpack.svg" alt="webpack">
                 <p>webpack</p>
             </span>
         </div>
     </section>
-    <section class="someApps">
+    <section id="projects" class="someApps">
         <h3>Estas son algunas aplicaciones</h3>
         <div class="someApps-slider">
             <input type="radio" name="slider-1" id="radio-1" checked>
@@ -81,14 +86,15 @@
                 </label>
                 <label for="radio-2" id="card-2" class="card">
                     <img src="./images/pateador.png" alt="pateador">
-                    <p>Elige un pateador</p>
+                    <p>Elige un pateador <br>
+                    </p>
                 </label>
                 <label for="radio-3" id="card-3" class="card">
                     <img src="./images/platziconf-logo.svg" alt="platzi conf">
                 </label>
             </div>
         </div>
-        <a href="#" class="cta">
+        <a id="contact" class="cta">
             contactame
         </a>
     </section>

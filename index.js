@@ -7,16 +7,13 @@ let gmailShowed = document.querySelectorAll('#gmailDiv')[0]
 
 openModal.addEventListener('click', function (e) {
 	e.preventDefault();
-	modalC.style.opacity = '1';
-	modalC.style.visibility = 'visible';
 	modalC.classList.toggle('modal-close');
 });
 closeModal.addEventListener("click", function(){
     modalC.classList.toggle("modal-close")
-	modalC.style.opacity = '0';
-	modalC.style.visibility = 'hidden';
 })
 gmailButton.addEventListener("click", function(){
-	gmailShowed.classList.toggle('hidden');
 	gmailShowed.style.visibility = 'visble';
+	gmailShowed.classList.toggle('hidden');
+
 })
