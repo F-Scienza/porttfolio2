@@ -15,5 +15,4 @@ closeModal.addEventListener("click", function(){
 gmailButton.addEventListener("click", function(){
 	gmailShowed.style.visibility = 'visble';
 	gmailShowed.classList.toggle('hidden');
-
 })
