@@ -74,6 +74,8 @@ ul {
     display: flex;
     justify-self: center;
     align-self: flex-end;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 .hello__container-avatarBackground::after{
@@ -91,8 +93,9 @@ ul {
     z-index: -1;
 }
 .avatar{
-    min-width: 170px;
-    min-height: 150px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
 }
 .hello__container-item-1{
     position: relative;
